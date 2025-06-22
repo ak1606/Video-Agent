@@ -369,4 +369,3 @@ Having issues? Here's how to get help:
 - **Issues**: https://github.com/ak1606/Video-Agent/issues
 - **Discussions**: https://github.com/ak1606/Video-Agent/discussions
 
-Similar code found with 2 license types
