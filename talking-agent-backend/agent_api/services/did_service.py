@@ -22,7 +22,7 @@ class DIDService:
         }
         
         # Use direct image URLs that end with proper extensions
-        self.default_avatar = "https://i.pravatar.cc/400.jpg"
+        self.default_avatar = "https://raw.githubusercontent.com/Asit0011/DID/main/avatar.jpg"
         
         # Backup avatars with proper extensions
         self.backup_avatars = [

@@ -1,0 +1,92 @@
+.voice-input {
+    padding: 20px;
+    border-top: 1px solid #e9ecef;
+    background: white;
+  }
+  
+  .voice-input__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .voice-input__mic-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+  }
+  
+  .voice-input__mic-button:hover:not(:disabled) {
+    background: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .voice-input__mic-button:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .voice-input__mic-button.listening {
+    background: #dc3545;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 20px rgba(220, 53, 69, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+    }
+  }
+  
+  .voice-input__status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #dc3545;
+    font-weight: 500;
+  }
+  
+  .voice-input__transcript {
+    background: #e3f2fd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .voice-input__transcript p {
+    margin: 0;
+    color: #1976d2;
+    font-style: italic;
+  }
+  
+  .voice-input__error {
+    background: #ffebee;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .voice-input__error p {
+    margin: 0;
+    color: #c62828;
+    font-size: 14px;
+  }

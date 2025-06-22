@@ -1,0 +1,41 @@
+.talking-agent {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .talking-agent__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-height: 600px;
+  }
+  
+  .talking-agent__video-section {
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .talking-agent__chat-section {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+  }
+  
+  @media (max-width: 768px) {
+    .talking-agent__container {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    
+    .talking-agent__chat-section {
+      height: 400px;
+    }
+  }
