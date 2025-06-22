@@ -1,0 +1,360 @@
+# =================================================================
+# AI TALKING AGENT PROJECT - COMPREHENSIVE .GITIGNORE
+# =================================================================
+
+# =================================================================
+# ENVIRONMENT & SECRETS
+# =================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+config.json
+secrets.json
+
+# API Keys and sensitive data
+**/api_keys.txt
+**/credentials.json
+**/*_key.txt
+**/*_secret.txt
+
+# =================================================================
+# PYTHON/DJANGO BACKEND (talking-agent-backend/)
+# =================================================================
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+talking-agent-backend/venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Django specific
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Django migrations (optional - uncomment if you want to ignore)
+# **/migrations/0*.py
+
+# =================================================================
+# NODE.JS/REACT FRONTEND (talking-agent-frontend/)
+# =================================================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Production build
+build/
+dist/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+coverage/
+.nyc_output
+
+# ESLint cache
+.eslintcache
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# =================================================================
+# DEVELOPMENT TOOLS & IDEs
+# =================================================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm
+.idea/
+*.swp
+*.swo
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+Session.vim
+.netrwhist
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =================================================================
+# OPERATING SYSTEM FILES
+# =================================================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =================================================================
+# LOGS AND TEMPORARY FILES
+# =================================================================
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary directories
+tmp/
+temp/
+.tmp/
+.temp/
+
+# =================================================================
+# MEDIA AND ASSETS (TALKING AGENT SPECIFIC)
+# =================================================================
+
+# Generated videos from D-ID API
+videos/
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+
+# Audio files (if storing voice recordings)
+audio/
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+
+# Generated images/avatars
+avatars/
+generated/
+
+# =================================================================
+# DATABASE FILES
+# =================================================================
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# PostgreSQL
+*.sql
+*.dump
+
+# =================================================================
+# BACKUP AND ARCHIVE FILES
+# =================================================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+
+# Archive files
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tar.bz2
+
+# =================================================================
+# CERTIFICATES AND SECURITY
+# =================================================================
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# =================================================================
+# PACKAGE MANAGERS
+# =================================================================
+
+# Python package management
+pip-log.txt
+pip-delete-this-directory.txt
+.Python
+Pipfile.lock
+
+# Node package management
+package-lock.json
+yarn.lock
+.pnp
+.pnp.js
+
+# =================================================================
+# CLOUD AND DEPLOYMENT
+# =================================================================
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+.docker/
+
+# Heroku
+Procfile
+.env.example
+
+# AWS
+.aws/
+*.pem
+
+# =================================================================
+# MISCELLANEOUS
+# =================================================================
+
+# Cache directories
+.cache/
+*.cache
+
+# Lock files
+*.lock
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
